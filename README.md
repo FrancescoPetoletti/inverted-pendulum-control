@@ -6,31 +6,39 @@ Mathematical modeling and closed-loop control system development for an inverted
 
 
 
+\## Project Overview
+
+
+
+The objective of this project is to stabilize an inherently unstable non-linear system (the inverted pendulum) in its upright position while controlling the cart's lateral position.
+
+
+
 \## Key Features \& Methodology
 
 
 
-1\. \*\*Mathematical Modeling:\*\*
+\*\*1. Mathematical Modeling:\*\*
 
-&#x20;  \* Derivation of the non-linear equations of motion using Lagrangian mechanics.
+\* Derivation of the non-linear equations of motion using Lagrangian mechanics.
 
-&#x20;  \* Linearization of the system around the unstable vertical equilibrium point.
+\* Linearization of the system around the unstable vertical equilibrium point.
 
-&#x20;  \* Extraction of the linearized state-space model (A, B, C, D matrices).
-
-
-
-2\. \*\*Control System Design:\*\*
-
-&#x20;  \* \*\*PID Control:\*\* Design and tuning of a Proportional-Integral-Derivative controller for baseline stabilization.
-
-&#x20;  \* \*\*State Feedback Control:\*\* Implementation of an optimal control strategy (e.g., LQR / Pole Placement) utilizing the full state-space dynamics for improved robustness and response time.
+\* Extraction of the linearized state-space model (A, B, C, D matrices).
 
 
 
-3\. \*\*Simulation:\*\*
+\*\*2. Control System Design:\*\*
 
-&#x20;  \* Full non-linear block diagram simulation in Simulink to validate the control laws against realistic physical constraints.
+\* \*\*PID Control:\*\* Design and tuning of a Proportional-Integral-Derivative controller for baseline stabilization.
+
+\* \*\*State Feedback Control:\*\* Implementation of an optimal control strategy utilizing the full state-space dynamics for improved robustness and response time.
+
+
+
+\*\*3. Simulation:\*\*
+
+\* Full non-linear block diagram simulation in Simulink to validate the control laws against realistic physical constraints.
 
 
 
@@ -38,17 +46,17 @@ Mathematical modeling and closed-loop control system development for an inverted
 
 
 
-\- docs/pendolo\_inverso       # Project report and mathematical derivations
+\- `docs/pendolo\_inverso` Project report and mathematical derivations
 
-\- models/                    # Simulink block diagrams
+\- `models/` Simulink block diagrams
 
-&#x20; - Model\_40\_01\_1.slx        # Open-loop non-linear plant simulation
+&#x20; - `Model\_40\_01\_1.slx` Open-loop non-linear plant simulation
 
-&#x20; - Model\_40\_01\_2.slx        # Closed-loop simulation with PID controller
+&#x20; - `Model\_40\_01\_2.slx` Closed-loop simulation with PID controller
 
-&#x20; - Model\_40\_01\_3.slx        # Closed-loop simulation with State Feedback control
+&#x20; - `Model\_40\_01\_3.slx` Closed-loop simulation with State Feedback control
 
-\- main\_pendulum.m            # Master script for parameters and state-space matrices
+\- `main\_pendulum.m` Master script for parameters and state-space matrices
 
-\- README.md                  # This file
+\- `README.md` This file
 

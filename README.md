@@ -6,13 +6,9 @@ Mathematical modeling and closed-loop control system development for an inverted
 
 
 
-\## Project Overview
-
-The objective of this project is to stabilize an inherently unstable non-linear system (the inverted pendulum) in its upright position while controlling the cart's lateral position. 
-
-
-
 \## Key Features \& Methodology
+
+
 
 1\. \*\*Mathematical Modeling:\*\*
 
@@ -36,17 +32,23 @@ The objective of this project is to stabilize an inherently unstable non-linear 
 
 \## Repository Structure
 
-\- docs/pendolo inverso      # Project report and mathematical derivations
 
-\- models/                   # Simulink models (.slx)
 
-&#x20; - Model\_40\_01\_1.slx
+```text
 
-&#x20; - Model\_40\_01\_2.slx
+\- docs/pendolo\_inverso       # Project report and mathematical derivations
 
-&#x20; - Model\_40\_01\_3.slx
+\- models/                    # Simulink block diagrams
 
-\- main\_pendulum.m           # Master script for parameters and state-space matrices
+&#x20; ├── Model\_40\_01\_1.slx      # Open-loop non-linear plant simulation
 
-\- README.md                 # This file
+&#x20; ├── Model\_40\_01\_2.slx      # Closed-loop simulation with PID controller
+
+&#x20; └── Model\_40\_01\_3.slx      # Closed-loop simulation with State Feedback control
+
+\- main\_pendulum.m            # Master script for parameters and state-space matrices
+
+\- README.md                  # This file
+
+```
 

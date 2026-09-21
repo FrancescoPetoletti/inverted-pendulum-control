@@ -24,8 +24,8 @@ The objective of this project is to stabilize an inherently unstable non-linear 
 
 - `docs/pendolo_inverso` Project report and mathematical derivations
 - `models/` Simulink block diagrams
-  - `Model_40_01_1.slx` Open-loop non-linear plant simulation
-  - `Model_40_01_2.slx` Closed-loop simulation with PID controller
-  - `Model_40_01_3.slx` Closed-loop simulation with State Feedback control
-- `main_pendulum.m` Master script for parameters and state-space matrices
+  - `Model_40_01_1.slx` Open-loop non-linear plant simulation 
+  - `Model_40_01_2.slx` Closed-loop simulation with PID controller 
+  - `Model_40_01_3.slx` State-space control with Observer on non-linear plant 
+- `Code_40_01.m` Master script 
 - `README.md` This file
